@@ -8,3 +8,6 @@ My project is called Aid For Educators, and it serves to support teachers by pro
 program that encouraged me to help the community. I made the project by drafting out the layout and the important aspects I want the user to find (grants or templates), and then coded it out. 
 I struggled with coding out my ideas to life, such as the modal. I had to scour the internet to figure out how to create an interactive modal and properly display it. I learned how important having creative skills are 
 when coding websites. 
+
+https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge 
+https://award.athena.hackclub.com?utm_source=readme
