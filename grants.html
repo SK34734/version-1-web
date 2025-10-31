@@ -1,0 +1,36 @@
+<!-- add a link to template for grants before the grants are listed -->
+<h1> Grants </h1>
+<p> Before you get started, click here for the template to apply to grants as a teacher. </p>
+<br>
+<a href="grant-template-teacher.html">
+    <button>Teacher Template (Grants)</button>
+</a>
+
+<!-- once applied for non-profit status -->
+<p> Beyond grants, our non-profit can help you reach out to companies or organizations
+asking for donations. Companies may often prefer to donate to organizations over individuals.
+Any donations given to us on behalf of your fundraiser will be given to the fundraiser from us.
+This is a promise we will uphold. </p>
+
+<link rel="stylesheet" href="style_for_grants.css">
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <div class="facets">
+        <h3 id="center-text">Category</h3> <!-- not centering text! -->
+        <label><input type="checkbox" class="facet-checkbox" data-facet-type="category" value="general"> General Grants</label>
+        <label><input type="checkbox" class="facet-checkbox" data-facet-type="category" value="art"> Art Classroom Grants</label>
+        <label><input type="checkbox" class="facet-checkbox" data-facet-type="category" value="STEM"> STEM Classroom Grants</label>
+        <label><input type="checkbox" class="facet-checkbox" data-facet-type="category" value="fellowships"> Fellowships </label>
+
+        <h3>Price Range</h3>
+        <label><input type="radio" class="facet-radio" name="price" data-facet-type="price" value="0-500"> $0 - $500</label>
+        <label><input type="radio" class="facet-radio" name="price" data-facet-type="price" value="501-1000"> $501 - $1000</label>
+        <label><input type="radio" class="facet-radio" name="price" data-facet-type="price" value="varies"> varies </label>
+        <button id="resetFilters">Reset Filters</button>
+    </div>
+    <div id="searchResults">
+        <!-- Search results will be displayed here -->
+    </div>
+</div>
+
+<script src="script_for_grants.js"></script>

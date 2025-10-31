@@ -1,0 +1,123 @@
+<!--<script src="script.js"></script>-->
+<html lang="">
+<body>
+
+<link rel="stylesheet" href="style.css">
+
+<header>
+    <h1>Resource Library For School Supplies </h1> <!-- center this -->
+    <h3>for teachers!</h3> <!-- center this -->
+</header>
+
+<!-- figure out how to edit sizes, colors, etc of buttons-->
+<!-- dont forget to add: div class = "", and add a section in css: "" { blah blah } -->
+<!-- maybe make the buttons three big sections/boxes vertically lined up, beside each other? -->
+
+<main>
+
+    <!-- talks about how we can support you and directly or partially host a fundraiser, drive, event, etc for you -->
+    <!-- could link the insights tab at the bottom of it-->
+    <!-- IMPORTANT FOR LATER: <h2> Our Support </h2> -->
+
+    <h2>Grants</h2>
+        <br>
+        <a href="grants.html">
+            <button>List of Grants + Template</button>
+        </a>
+    <!-- create a button that leads you to library for grants + template for grant) -->
+
+    <!-- check if youre legally able to list these stores? find out for each store and what their policies are-->
+    <h2>Stores that offer discounts</h2>
+
+    <!-- prob put this near the top, should be first or second after title -->
+    <h2>Strategies</h2>
+    <div class="strategies">
+        <br>
+        <a href="insights.html">
+            <button id="answer2">Insights into how to have a successful fundraising campaign</button>
+        </a>
+    </div>
+
+    <!-- <h2>Templates</h2>
+
+    <h3> For Fundraisers: </h3>
+    <ul>
+
+        will be what they can use to write a letter to community asking for support in newspaper
+
+        <li>
+            <br>
+            <a href="mall-template.html">
+                <button>Reaching Out to Malls or Other Places</button>
+            </a>
+        </li>
+
+        <li>
+            <br>
+            <a href="DineIn-template.html">
+                <button>Setting up Dine-In Events</button>
+            </a>
+        </li>
+
+        <li>
+            <br>
+            <a href="newspaper-promotion-template.html">
+                <button>Promoting Your Fundraiser on a Newspaper</button>
+            </a>
+        </li>
+
+        <li>
+            <br>
+            <a href="call-to-editor-template.html">
+                <button>Calling Editor of a Newspaper</button>
+            </a>
+        </li>
+
+    </ul>-->
+
+
+</main>
+
+<!-- Disclaimer Modal -->
+<div id="disclaimer-modal" class="modal">
+    <div class="modal-content">
+        <h2>Disclaimer</h2>
+        <p>
+            The information provided on this website is for general informational
+            purposes only and may not be comprehensive or up to date. By clicking
+            "Agree," you acknowledge that you understand and accept this disclaimer.
+        </p> <!-- change this text later!!!! -->
+        <button id="agree-btn">Agree</button>
+    </div>
+</div>
+
+
+<script>
+    localStorage.removeItem("disclaimerAgreed")
+
+    window.addEventListener("DOMContentLoaded", function() {
+        const modal = document.getElementById("disclaimer-modal");
+        const agreeBtn = document.getElementById("agree-btn");
+
+        if (!modal || !agreeBtn) {
+            console.error("Modal or button not found!");
+            return;
+        }
+
+        const hasAgreed = localStorage.getItem("disclaimerAgreed");
+
+        if (hasAgreed === "true") {
+            modal.classList.add("hidden");
+        }
+
+        agreeBtn.addEventListener("click", function() {
+            localStorage.setItem("disclaimerAgreed", "true");
+            modal.classList.add("hidden");
+        });
+    });
+
+</script>
+<!-- maybe make the modal/disclaimer fade out slowly -->
+<script src="script.js"></script>
+</body>
+</html>
